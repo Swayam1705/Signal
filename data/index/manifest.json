@@ -1,0 +1,101 @@
+{
+  "index_id": "idx_20260818_104750_25a6ef",
+  "dataset": "ai4bharat/MSMARCO-XI",
+  "dataset_source": "ai4bharat/MSMARCO-XI:hi:validation:subset",
+  "dataset_mode": "official_subset",
+  "development_fixture": false,
+  "official_subset": true,
+  "subset_id": "subset_deab1c202725a6ef",
+  "subset": {
+    "dataset": "ai4bharat/MSMARCO-XI",
+    "source": "huggingface",
+    "language": "hi",
+    "split": "validation",
+    "selection": "first",
+    "seed": 2026,
+    "scan_limit": 100000,
+    "max_records": 500,
+    "source_location": "https://huggingface.co/datasets/ai4bharat/MSMARCO-XI/resolve/main/validation/hinval.parquet"
+  },
+  "deterministic_selection": true,
+  "schema_inspected": [
+    "source_lang",
+    "target_lang",
+    "meta",
+    "query",
+    "Answer",
+    "query_id",
+    "query_type",
+    "passages.is_selected",
+    "passages.English_passages",
+    "passages.Translated_passages",
+    "Eng_Query",
+    "Eng_Answer"
+  ],
+  "fields_indexed": [
+    "passages.English_passages",
+    "passages.Translated_passages"
+  ],
+  "fields_metadata": [
+    "query_id",
+    "query",
+    "Eng_Query",
+    "query_type",
+    "source_lang",
+    "target_lang",
+    "passages.is_selected",
+    "meta.model_name"
+  ],
+  "fields_ignored": [
+    "Answer",
+    "Eng_Answer",
+    "meta.temperature",
+    "meta.max_tokens",
+    "meta.top_p",
+    "meta.frequency_penalty",
+    "meta.presence_penalty"
+  ],
+  "language": "hi",
+  "split": "validation",
+  "records": 500,
+  "records_scanned_this_run": 500,
+  "invalid_records_this_run": 0,
+  "duplicate_records_skipped": 0,
+  "duplicate_chunks_skipped": 0,
+  "chunks": 10105,
+  "documents": 9990,
+  "chunk_strategy": "adaptive_hybrid",
+  "selected_strategy_counts": {
+    "sentence": 9965,
+    "semantic": 89,
+    "sliding_window": 51
+  },
+  "chunk_config": {
+    "size": 160,
+    "overlap": 32,
+    "minimum": 24,
+    "maximum": 240
+  },
+  "embedding_provider": "sentence_transformers",
+  "embedding_mode": "production",
+  "embedding_model": "intfloat/multilingual-e5-small",
+  "embedding_dimension": 384,
+  "embedding_device": "cpu",
+  "vector_store": "Qdrant embedded",
+  "resumed": false,
+  "created_at": "2026-08-18T10:47:51.003642+00:00",
+  "demo_queries": [
+    ". what is a corporation?",
+    "why did rachel carson write an obligation to endure",
+    "chart for foods low in potassium.",
+    "bottom front of a cargo ship",
+    "honesty or integrity definition",
+    "what is barometric pressure in lincoln ne now?",
+    "struthers city school district state number",
+    "does medical marijuana help with ptsd",
+    "how many women did frank gifford marry",
+    "how many ongoing trump administration investigations",
+    "guide to how to collect followers on wow",
+    "how long is zales layaway"
+  ]
+}

@@ -1,0 +1,7 @@
+# Optional production embedding and official dataset ingestion dependencies.
+# Install only for neural-retrieval/full-production or --source official workflows.
+# Security floors reflect the 2026-08-17 dependency audit.
+sentence-transformers>=5.2.3,<6.0
+transformers>=5.5.0,<6.0
+datasets>=4.5.0,<5.0
+pyarrow>=23.0.1,<24.0

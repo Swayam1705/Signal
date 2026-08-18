@@ -1,0 +1,206 @@
+{
+  "generated_at": "2026-08-17T14:34:59.281476+00:00",
+  "source": "bundled fixture passages",
+  "same_document_sha256": "ce17ed196a44d76caf19b3493d1a044d15c4457e2d2b5c86555122eb3a6f2a0c",
+  "document_tokens": 412,
+  "config": {
+    "chunk_size": 160,
+    "overlap": 32,
+    "minimum_chunk_size": 24,
+    "maximum_chunk_size": 240
+  },
+  "strategies": {
+    "sentence": {
+      "chunk_count": 3,
+      "selected_algorithm": null,
+      "chunks": [
+        {
+          "index": 0,
+          "tokens": 159,
+          "characters": 1090,
+          "overlap": 0,
+          "start": "The Manhattan Project produced the first nuclear weapons. Its immediate wartime impact was the use o",
+          "end": "and oceans. Transpiration releases water vapour from plants and contributes to atmospheric moisture.",
+          "chunk_id": "chk_6fbd3f73ede0b931"
+        },
+        {
+          "index": 1,
+          "tokens": 156,
+          "characters": 971,
+          "overlap": 0,
+          "start": "New Delhi is the capital of India and the seat of all three branches of the Government of India. It ",
+          "end": "development, functioning, and reproduction. Most DNA consists of two strands forming a double helix.",
+          "chunk_id": "chk_4824001f92337c99"
+        },
+        {
+          "index": 2,
+          "tokens": 107,
+          "characters": 718,
+          "overlap": 0,
+          "start": "DNA stores information in sequences of four nucleotide bases: adenine, cytosine, guanine, and thymin",
+          "end": " describes the long-term statistical pattern of weather in a region, commonly measured over decades.",
+          "chunk_id": "chk_699a465b1cbc5923"
+        }
+      ]
+    },
+    "sliding_window": {
+      "chunk_count": 3,
+      "selected_algorithm": null,
+      "chunks": [
+        {
+          "index": 0,
+          "tokens": 163,
+          "characters": 1107,
+          "overlap": 0,
+          "start": "The Manhattan Project produced the first nuclear weapons. Its immediate wartime impact was the use o",
+          "end": "piration releases water vapour from plants and contributes to atmospheric moisture. New Delhi is the",
+          "chunk_id": "chk_3b78cfecfa1415f9"
+        },
+        {
+          "index": 1,
+          "tokens": 164,
+          "characters": 1053,
+          "overlap": 32,
+          "start": "precipitation, infiltration, and runoff. Solar energy drives evaporation, while gravity returns prec",
+          "end": " an official elevation of 8,848.86 metres in 2020. Deoxyribonucleic acid, or DNA, is a molecule that",
+          "chunk_id": "chk_e1f904c0302eeed2"
+        },
+        {
+          "index": 2,
+          "tokens": 162,
+          "characters": 1069,
+          "overlap": 32,
+          "start": "and energy. Mount Everest is Earth's highest mountain above sea level. Nepal and China jointly annou",
+          "end": " describes the long-term statistical pattern of weather in a region, commonly measured over decades.",
+          "chunk_id": "chk_f96184502a11132f"
+        }
+      ]
+    },
+    "semantic": {
+      "chunk_count": 6,
+      "selected_algorithm": null,
+      "chunks": [
+        {
+          "index": 0,
+          "tokens": 69,
+          "characters": 451,
+          "overlap": 0,
+          "start": "The Manhattan Project produced the first nuclear weapons. Its immediate wartime impact was the use o",
+          "end": "e process by which green plants, algae, and some bacteria convert light energy into chemical energy.",
+          "chunk_id": "chk_ccfbd7b3e723cab4"
+        },
+        {
+          "index": 1,
+          "tokens": 155,
+          "characters": 1002,
+          "overlap": 0,
+          "start": "Using chlorophyll, they combine carbon dioxide and water to produce glucose and release oxygen. Most",
+          "end": " gravity also contributes, and the alignment of Sun, Moon, and Earth produces spring and neap tides.",
+          "chunk_id": "chk_4972d5f29ef8fff0"
+        },
+        {
+          "index": 2,
+          "tokens": 38,
+          "characters": 268,
+          "overlap": 0,
+          "start": "Albert Einstein published the special theory of relativity in 1905. He presented the general theory ",
+          "end": "time, in 1915. Relativity transformed the scientific understanding of space, time, mass, and energy.",
+          "chunk_id": "chk_c0e4f9dc44878731"
+        },
+        {
+          "index": 3,
+          "tokens": 89,
+          "characters": 593,
+          "overlap": 0,
+          "start": "Mount Everest is Earth's highest mountain above sea level. Nepal and China jointly announced an offi",
+          "end": "arth's atmosphere scatter short wavelengths of visible sunlight more strongly than long wavelengths.",
+          "chunk_id": "chk_326e64998d0e2017"
+        },
+        {
+          "index": 4,
+          "tokens": 37,
+          "characters": 235,
+          "overlap": 0,
+          "start": "This process is called Rayleigh scattering. Vaccines train the immune system to recognize a pathogen",
+          "end": "disease itself. This creates immune memory that can support a faster response during later exposure.",
+          "chunk_id": "chk_2d69c136f756cfc0"
+        },
+        {
+          "index": 5,
+          "tokens": 34,
+          "characters": 227,
+          "overlap": 0,
+          "start": "Weather describes short-term atmospheric conditions such as temperature, rain, and wind at a particu",
+          "end": " describes the long-term statistical pattern of weather in a region, commonly measured over decades.",
+          "chunk_id": "chk_4c4e93dc9930e7c1"
+        }
+      ]
+    },
+    "metadata_aware": {
+      "chunk_count": 3,
+      "selected_algorithm": null,
+      "chunks": [
+        {
+          "index": 0,
+          "tokens": 165,
+          "characters": 1140,
+          "overlap": 0,
+          "start": "Shared inspection document — RAG evaluation — en: The Manhattan Project produced the first nuclear w",
+          "end": "and oceans. Transpiration releases water vapour from plants and contributes to atmospheric moisture.",
+          "chunk_id": "chk_22b0ad34daa78fb6"
+        },
+        {
+          "index": 1,
+          "tokens": 162,
+          "characters": 1021,
+          "overlap": 0,
+          "start": "Shared inspection document — RAG evaluation — en: New Delhi is the capital of India and the seat of ",
+          "end": "development, functioning, and reproduction. Most DNA consists of two strands forming a double helix.",
+          "chunk_id": "chk_c9aa69e6dd064f60"
+        },
+        {
+          "index": 2,
+          "tokens": 113,
+          "characters": 768,
+          "overlap": 0,
+          "start": "Shared inspection document — RAG evaluation — en: DNA stores information in sequences of four nucleo",
+          "end": " describes the long-term statistical pattern of weather in a region, commonly measured over decades.",
+          "chunk_id": "chk_88af33c0ea9635a0"
+        }
+      ]
+    },
+    "adaptive_hybrid": {
+      "chunk_count": 3,
+      "selected_algorithm": "metadata_aware",
+      "chunks": [
+        {
+          "index": 0,
+          "tokens": 165,
+          "characters": 1140,
+          "overlap": 0,
+          "start": "Shared inspection document — RAG evaluation — en: The Manhattan Project produced the first nuclear w",
+          "end": "and oceans. Transpiration releases water vapour from plants and contributes to atmospheric moisture.",
+          "chunk_id": "chk_7df7b34fe5350a33"
+        },
+        {
+          "index": 1,
+          "tokens": 162,
+          "characters": 1021,
+          "overlap": 0,
+          "start": "Shared inspection document — RAG evaluation — en: New Delhi is the capital of India and the seat of ",
+          "end": "development, functioning, and reproduction. Most DNA consists of two strands forming a double helix.",
+          "chunk_id": "chk_936ffcbedaf3b09d"
+        },
+        {
+          "index": 2,
+          "tokens": 113,
+          "characters": 768,
+          "overlap": 0,
+          "start": "Shared inspection document — RAG evaluation — en: DNA stores information in sequences of four nucleo",
+          "end": " describes the long-term statistical pattern of weather in a region, commonly measured over decades.",
+          "chunk_id": "chk_0abf8392447fe8c4"
+        }
+      ]
+    }
+  }
+}

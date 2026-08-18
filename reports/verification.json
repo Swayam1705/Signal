@@ -1,0 +1,115 @@
+{
+  "verified_at": "2026-08-17T14:45:08Z",
+  "runtime_truth": {
+    "profile": "local-development",
+    "mode": "development_fallback",
+    "health": "degraded",
+    "stt": "offline — ELEVENLABS_API_KEY required",
+    "dataset_mode": "development_fixture",
+    "records": 12,
+    "documents": 34,
+    "chunks": 34,
+    "index_id": "idx_20260817_143458_3fda05",
+    "clean_build_resumed": false
+  },
+  "red_team_corrections": {
+    "evaluation_label_leakage": "fixed — is_selected removed from retrieval and reranking; historical affected runs marked invalid",
+    "unicode_grounding": "fixed — shared Unicode letter/number/combining-mark tokenizer",
+    "voice_trace_identity": "fixed — STT and RAG stream stages use one request ID",
+    "stt_retry": "fixed — bounded timeout/429/5xx retry",
+    "benchmark_diversity": "fixed — 100 unique queries sourced from matching valid evaluation",
+    "benchmark_cache_truth": "fixed — warmed runtime recorded as cold_cache=false",
+    "profile_separation": "four-profile backend/UI registry plus executable credential-gated full-voice harness",
+    "evidence_inspector": "vector/BM25/metadata/hybrid/rerank scores, rank change, and exact cited quote exposed"
+  },
+  "source_quality": {
+    "ruff": "passed",
+    "python_compile": "passed",
+    "pytest": {"passed": 45, "failed": 0, "duration_s": 3.07},
+    "frontend_eslint": "passed",
+    "typescript_vite_build": "passed",
+    "frontend_modules": 40,
+    "frontend_bundle_bytes": {"html": 592, "css": 35523, "javascript": 235958}
+  },
+  "dependency_audit": {
+    "pip_core": "no known vulnerabilities",
+    "pip_optional_ml": "no known vulnerabilities",
+    "npm": "0 vulnerabilities"
+  },
+  "official_ingestion_dry_run": {
+    "dataset": "ai4bharat/MSMARCO-XI",
+    "language": "hi",
+    "split": "validation",
+    "selection": "first",
+    "max_records": 10000,
+    "scan_limit": 100000,
+    "source": "validation/hinval.parquet",
+    "downloaded_or_indexed": false,
+    "status": "passed"
+  },
+  "evaluation": {
+    "evaluation_id": "eval_20260817_143735_6c3422",
+    "retrieval_queries": 131,
+    "unique_base_queries": 17,
+    "adversarial_cases": 24,
+    "recall_at_1": 0.8854961832061069,
+    "recall_at_3": 1.0,
+    "recall_at_5": 1.0,
+    "mrr": 0.9427480916030534,
+    "ndcg_at_5": 0.5971094402471065,
+    "grounding_pass_rate": 1.0,
+    "citation_validity_rate": 1.0,
+    "answerability_rate": 1.0,
+    "adversarial_failures": 0,
+    "ground_truth_isolation": "is_selected evaluator-only"
+  },
+  "benchmark": {
+    "benchmark_id": "bench_20260817_143742_aa75ca",
+    "profile": "local-development",
+    "scope": "cache-bypassed in-process complete local text RAG; excludes HTTP, STT, neural embeddings, remote LLM and browser capture",
+    "queries": 100,
+    "unique_queries": 100,
+    "warmups": 5,
+    "runtime_warmed": true,
+    "cold_cache": false,
+    "p50_ms": 2.694482499919104,
+    "p70_ms": 2.777582500129938,
+    "p95_ms": 3.010998799754816,
+    "p100_ms": 3.8404380002248217,
+    "mean_ms": 2.7372508400185325,
+    "failure_rate": 0.0,
+    "refusal_rate": 0.0,
+    "grounding_pass_rate": 1.0
+  },
+  "live_smoke": {
+    "frontend_vite": "passed",
+    "frontend_api_proxy": "passed",
+    "health_truth": "passed",
+    "grounded_english_query": "passed",
+    "grounded_marathi_query": "passed",
+    "no_evidence_refusal": "passed",
+    "prompt_injection_refusal_before_retrieval": "passed",
+    "ndjson_actual_stages": "passed",
+    "inspect_metrics_artifact_profile_history_endpoints": "passed",
+    "empty_audio_error": "passed",
+    "stt_offline_error": "passed",
+    "security_headers": "passed",
+    "cors_allowed_origin": "passed"
+  },
+  "repository_security": {
+    "secret_scan": "no live credentials; only explicit test placeholders",
+    "env_file_present": false,
+    "security_review": "SECURITY.md"
+  },
+  "not_executed": {
+    "official_subset_download_or_index": "dry-run only; no official records downloaded",
+    "full_corpus_ingestion": "not attempted",
+    "real_multilingual_e5_runtime": "optional dependencies/model unavailable; adapter contract-tested",
+    "live_openai_compatible_provider": "credentials/endpoint unavailable; adapter contract-tested",
+    "live_elevenlabs": "credential unavailable; adapter contract-tested",
+    "neural_or_full_production_benchmark": "runtime unavailable",
+    "full_voice_benchmark": "credentialed production runtime and fixed audio set unavailable",
+    "rendered_browser_microphone_accessibility": "no browser executable",
+    "docker_compose": "Docker CLI unavailable"
+  }
+}

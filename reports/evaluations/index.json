@@ -1,0 +1,102 @@
+{
+  "evaluations": [
+    {
+      "evaluation_id": "eval_20260817_135525_58adcb",
+      "timestamp": "2026-08-17T13:55:25.185558+00:00",
+      "latest": false,
+      "status": "superseded_initial_guardrail_run",
+      "retrieval_query_count": 80,
+      "recall_at_1": 0.9375,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "mrr": 0.96875,
+      "ndcg_at_5": 0.6108636793082409,
+      "grounding_rate": 1.0,
+      "note": "Historical artifact retained for audit; do not present as latest"
+    },
+    {
+      "evaluation_id": "eval_20260817_135649_99c3c2",
+      "timestamp": "2026-08-17T13:56:49.578231+00:00",
+      "latest": false,
+      "status": "invalid_ranking_label_leakage",
+      "retrieval_query_count": 131,
+      "recall_at_1": 0.9465648854961832,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "mrr": 0.9732824427480916,
+      "ndcg_at_5": 0.6082978046155405,
+      "grounding_rate": 1.0,
+      "note": "Historical artifact only: is_selected influenced online ranking and metrics are not defensible"
+    },
+    {
+      "evaluation_id": "eval_20260817_140324_98a992",
+      "timestamp": "2026-08-17T14:03:24.655038+00:00",
+      "latest": false,
+      "status": "invalid_ranking_label_leakage",
+      "retrieval_query_count": 131,
+      "recall_at_1": 0.9465648854961832,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "mrr": 0.9732824427480916,
+      "ndcg_at_5": 0.6082978046155405,
+      "grounding_rate": 1.0,
+      "note": "Historical artifact only: is_selected influenced online ranking and metrics are not defensible"
+    },
+    {
+      "evaluation_id": "eval_20260817_143255_bc0ed2",
+      "timestamp": "2026-08-17T14:32:55.843216+00:00",
+      "latest": false,
+      "status": "valid_superseded",
+      "retrieval_query_count": 131,
+      "recall_at_1": 0.8778625954198473,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "mrr": 0.9389312977099237,
+      "ndcg_at_5": 0.5855081838456517,
+      "grounding_rate": 0.9312977099236641,
+      "note": "Historical artifact retained for audit; do not present as latest"
+    },
+    {
+      "evaluation_id": "eval_20260817_143500_10aaaa",
+      "timestamp": "2026-08-17T14:35:00.680402+00:00",
+      "latest": false,
+      "status": "valid_superseded",
+      "retrieval_query_count": 131,
+      "recall_at_1": 0.8778625954198473,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "mrr": 0.9389312977099237,
+      "ndcg_at_5": 0.5951768845575324,
+      "grounding_rate": 0.9389312977099237,
+      "note": "Historical artifact retained for audit; do not present as latest"
+    },
+    {
+      "evaluation_id": "eval_20260817_143630_6466b3",
+      "timestamp": "2026-08-17T14:36:30.946179+00:00",
+      "latest": false,
+      "status": "valid_superseded",
+      "retrieval_query_count": 131,
+      "recall_at_1": 0.8854961832061069,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "mrr": 0.9427480916030534,
+      "ndcg_at_5": 0.5971094402471065,
+      "grounding_rate": 1.0,
+      "note": "Historical artifact retained for audit; do not present as latest"
+    },
+    {
+      "evaluation_id": "eval_20260817_143735_6c3422",
+      "timestamp": "2026-08-17T14:37:35.789487+00:00",
+      "latest": true,
+      "status": "valid",
+      "retrieval_query_count": 131,
+      "recall_at_1": 0.8854961832061069,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "mrr": 0.9427480916030534,
+      "ndcg_at_5": 0.5971094402471065,
+      "grounding_rate": 1.0,
+      "note": "Ground-truth labels isolated from online ranking features"
+    }
+  ]
+}
