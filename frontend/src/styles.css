@@ -13,3 +13,68 @@
 @media(max-width:1050px){.profile-registry>div:last-child{grid-template-columns:repeat(2,1fr)}.profile-registry article:nth-child(2){border-bottom:2px solid #000}.profile-registry article:first-child{border-bottom:2px solid #000}.topbar{grid-template-columns:190px 1fr 150px}.topbar nav button{padding:0 10px}.hero{grid-template-columns:1fr 420px}.hero-specs{display:none}.hero h1{font-size:120px}.query-zone{grid-template-columns:1fr}.system-card{border-left:0;border-top:3px solid #000}.service-list{display:grid;grid-template-columns:1fr 1fr}.metrics-grid{grid-template-columns:1fr}.provider-section{grid-template-columns:1fr}.strategy-grid{grid-template-columns:1fr 1fr}.strategy-grid article:nth-child(2){border-right:2px solid #000}.strategy-grid article:nth-child(3),.strategy-grid article:nth-child(4){border-top:0}.strategy-grid article.strategy-active{grid-column:1/-1}.page-hero h1{font-size:130px}.pipeline-layout{grid-template-columns:.8fr 1.2fr}}
 @media(max-width:760px){.demo-scenarios{margin:40px 15px}.demo-scenarios>div:nth-child(2){grid-template-columns:1fr}.demo-scenarios article{border-right:0;border-bottom:2px solid #000}.profile-registry{padding:40px 15px 0}.profile-registry>div:last-child{grid-template-columns:1fr}.profile-registry article{border-bottom:2px solid #000}.topbar{height:auto;min-height:66px;grid-template-columns:1fr 140px}.wordmark{border:0}.topbar nav{grid-column:1/-1;order:3;overflow-x:auto;justify-content:flex-start;border-top:1px solid #444}.topbar nav button{min-height:43px;white-space:nowrap}.fallback-banner{align-items:flex-start;flex-direction:column;gap:4px}.hero{display:block;min-height:0}.hero-copy{padding:45px 22px 60px}.hero-meta-top{gap:20px}.hero h1{font-size:27vw;margin:65px 0 45px}.hero h1 span:nth-child(2){margin-left:10%}.hero-actions{flex-direction:column}.secondary-cta{border-left:2px solid #000!important;border-top:0!important}.hero-visual{height:430px;border:3px solid #000;border-left:0;border-right:0}.signal-core{width:190px;height:190px}.signal-core span{font-size:110px}.hero-specs{display:grid;grid-template-columns:1fr 1fr}.hero-specs div{min-height:82px}.query-main{padding:60px 18px}.zone-head{align-items:flex-start;flex-direction:column}.zone-head h2{font-size:17vw}.zone-head>p{margin-top:35px}.mode-switch button{min-width:0;flex:1;padding:13px 8px}.voice-console{padding:0 18px 35px}.voice-console>.console-label{margin-left:-18px;margin-right:-18px}.text-console{padding:22px}.text-console textarea{font-size:22px;padding:16px}.stage-track{grid-template-columns:repeat(4,1fr)}.stage-track>div{min-height:82px}.signal-error{grid-template-columns:1fr}.recommended{grid-template-columns:1fr}.recommended span,.recommended i{border:0;border-bottom:1px solid #000}.answer-grid{grid-template-columns:1fr}.answer-grid>div:first-child{padding:28px}.answer-grid h2{font-size:43px}.answer-copy{font-size:20px}.answer-stats{border:0;border-top:3px solid #000}.result-actions{flex-wrap:wrap}.result-actions button{flex:1;min-width:48%;border-bottom:1px solid #000}.show-buttons{grid-template-columns:repeat(2,1fr)}.evidence-section,.waterfall{padding:28px 20px}.score-grid{grid-template-columns:1fr 1fr;gap:12px}.waterfall-row{grid-template-columns:75px 1fr 65px}.inspect-grid{grid-template-columns:1fr 1fr}.inspect-block>summary{padding:20px}.inspect-block>label,.inspect-block>pre{margin-left:20px;margin-right:20px}.history-row{grid-template-columns:50px 1fr 70px}.history-row code{display:none}.page-hero{min-height:440px;padding:55px 22px}.page-hero h1{font-size:22vw;margin-top:100px}.page-hero p{position:static;margin-top:55px;font-size:17px}.pipeline-layout{grid-template-columns:1fr}.pipeline-stack,.stage-detail{padding:35px 20px}.pipeline-stack strong{font-size:20px}.stage-detail h2{font-size:50px}.stage-detail dl>div{grid-template-columns:90px 1fr}.chunking-feature,.provider-section{padding:70px 20px}.chunking-feature h2,.provider-section h2,.truth-panel h2{font-size:16vw}.strategy-grid{grid-template-columns:1fr}.strategy-grid article,.strategy-grid article:nth-child(2){border:2px solid #000;border-bottom:0}.strategy-grid article:nth-child(3),.strategy-grid article:nth-child(4){border:2px solid #000;border-bottom:0}.strategy-grid article.strategy-active{border:2px solid #000}.benchmark-profile{grid-template-columns:1fr}.benchmark-profile code{white-space:normal}.metric-strip,.metric-strip.four-metrics{grid-template-columns:1fr}.metric-strip article{min-height:220px;border-bottom:2px solid #000}.target-band{grid-template-columns:1fr}.metrics-grid{padding:50px 20px}.benchmark-transparency{grid-template-columns:1fr;padding:60px 20px;gap:30px}.benchmark-transparency h2{font-size:18vw}.benchmark-transparency footer{flex-direction:column;gap:8px}.architecture-board{margin:40px 15px}.architecture-flow{padding:25px 15px}.architecture-node button{grid-template-columns:40px 1fr}.architecture-node small{grid-column:2;padding-bottom:10px}.architecture-inspector{grid-template-columns:1fr;padding:25px 20px}.architecture-legend{flex-direction:column}.provider-section{display:block}.provider-list{margin-top:50px}.failure-architecture{padding:60px 20px}.failure-architecture>div{grid-template-columns:1fr 1fr}.judge-steps{grid-template-columns:1fr}.judge-audit{margin:50px 15px}.judge-audit details>div{grid-template-columns:1fr}.judge-audit article{border-right:0;border-bottom:1px solid #000}.coverage-table{margin:60px 15px}.coverage-table>header{display:none}.coverage-table>div:not(.section-heading){grid-template-columns:1fr;gap:8px;padding:20px 5px}.truth-panel{grid-template-columns:1fr;padding:60px 20px}.command-panel{grid-template-columns:1fr;padding:55px 20px}.command-panel pre{white-space:pre-wrap}.service-list{grid-template-columns:1fr}.app-shell>footer{grid-template-columns:1fr 1fr;gap:30px}.footer-note{grid-column:1/-1;text-align:left}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+/* ============================================================
+   READABILITY & FONT SIZE BOOST OVERRIDES (SAFE ADDITIVE)
+   ============================================================ */
+
+/* 1. Micro-labels, eyebrows, and section numbers */
+.eyebrow,
+.label,
+.meta-label,
+.section-tag,
+[class*="label"],
+[class*="eyebrow"],
+[class*="subtitle"],
+[class*="caption"] {
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.05em !important;
+  line-height: 1.4 !important;
+}
+
+/* 2. Small body text and descriptions */
+p, small, span, div {
+  font-size: max(0.95rem, inherit);
+}
+
+small, .small-text, [class*="small"] {
+  font-size: 0.875rem !important;
+  line-height: 1.5 !important;
+}
+
+/* 3. Pipeline stage names & timers (Transcribe, Analyze, Retrieve, etc.) */
+.stage-card,
+.pipeline-stage,
+[class*="stage"],
+[class*="timing"],
+[class*="timer"] {
+  font-size: 0.85rem !important;
+  font-weight: 700 !important;
+}
+
+/* 4. Evidence scores & metadata (Vector, BM25, Rerank scores) */
+.score-badge,
+.meta-item,
+[class*="score"],
+[class*="metric"] {
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+}
+
+/* 5. Session history table & query items */
+.history-item,
+.session-row,
+[class*="history"] {
+  font-size: 0.9rem !important;
+}
+
+/* 6. Code blocks and terminal commands */
+code, pre, kbd, samp, [class*="code"] {
+  font-size: 0.9rem !important;
+  line-height: 1.6 !important;
+}
+
+/* 7. Ensure high contrast for small text on yellow/cream boxes */
+.bg-yellow, [style*="yellow"], [class*="yellow"] {
+  color: #000000 !important;
+}
