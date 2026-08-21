@@ -1,21 +1,21 @@
 {
-  "index_id": "idx_20260820_150303_59c7d8",
+  "index_id": "idx_20260821_174440_c80c53",
   "dataset": "ai4bharat/MSMARCO-XI",
-  "dataset_source": "development-fixture:MSMARCO-XI-schema",
-  "dataset_mode": "development_fixture",
-  "development_fixture": true,
-  "official_subset": false,
-  "subset_id": "subset_bbf3db5e4e59c7d8",
+  "dataset_source": "ai4bharat/MSMARCO-XI:hi:validation:subset",
+  "dataset_mode": "official_subset",
+  "development_fixture": false,
+  "official_subset": true,
+  "subset_id": "subset_9c0e451368c80c53",
   "subset": {
     "dataset": "ai4bharat/MSMARCO-XI",
-    "source": "fixture",
+    "source": "huggingface",
     "language": "hi",
     "split": "validation",
-    "selection": "first",
+    "selection": "hash",
     "seed": 2026,
     "scan_limit": 100000,
-    "max_records": 5000,
-    "source_location": "C:\\Users\\Swayam\\OneDrive\\Desktop\\SIGNAL\\signal\\data\\source\\dev_fixture.jsonl"
+    "max_records": 500,
+    "source_location": "https://huggingface.co/datasets/ai4bharat/MSMARCO-XI/resolve/main/validation/hinval.parquet"
   },
   "deterministic_selection": true,
   "schema_inspected": [
@@ -57,16 +57,18 @@
   ],
   "language": "hi",
   "split": "validation",
-  "records": 12,
-  "records_scanned_this_run": 12,
+  "records": 500,
+  "records_scanned_this_run": 500,
   "invalid_records_this_run": 0,
   "duplicate_records_skipped": 0,
   "duplicate_chunks_skipped": 0,
-  "chunks": 34,
-  "documents": 34,
+  "chunks": 10076,
+  "documents": 9976,
   "chunk_strategy": "adaptive_hybrid",
   "selected_strategy_counts": {
-    "sentence": 34
+    "sentence": 9979,
+    "semantic": 62,
+    "sliding_window": 35
   },
   "chunk_config": {
     "size": 160,
@@ -81,19 +83,19 @@
   "embedding_device": "cpu-local",
   "vector_store": "Qdrant embedded",
   "resumed": false,
-  "created_at": "2026-08-20T15:03:03.176335+00:00",
+  "created_at": "2026-08-21T17:44:40.864566+00:00",
   "demo_queries": [
-    "What was the immediate impact of the success of the Manhattan Project?",
-    "What is photosynthesis?",
-    "What is the speed of light?",
-    "How does the water cycle work?",
-    "What is the capital of India?",
-    "What causes tides?",
-    "Who developed the theory of relativity?",
-    "How tall is Mount Everest?",
-    "What is DNA?",
-    "Why is the sky blue?",
-    "How do vaccines work?",
-    "What is the difference between weather and climate?"
+    "who play brandon stark on game of thrones",
+    "most prototypical liquid known psychology",
+    "how long can a parole be for life sentence?",
+    "how much does oj have left to serve",
+    "cost of cremation in France",
+    "the cost of the complete series of gunsmoke",
+    "how long does an assault charge stay on record",
+    "what is tread width of a tire",
+    "when was jim vance funeral",
+    "when was back to the future r",
+    "what to write in a condolences card",
+    "what is a standard bearer"
   ]
 }
