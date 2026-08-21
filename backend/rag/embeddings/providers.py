@@ -33,8 +33,10 @@ class HashingEmbeddingProvider(EmbeddingProvider):
     provider_name = "feature-hashing"
     mode = "development_fallback"
 
-    def __init__(self, dimension: int = 384):
+    def __init__(self, dimension: int = 384, mode: str | None = None):
         self.dimension = dimension
+        if mode:
+            self.mode = mode
 
     def _embed(self, text: str) -> list[float]:
         normalized = re.sub(r"\s+", " ", text.lower()).strip()
@@ -116,4 +118,4 @@ def create_embedding_provider(settings: Settings) -> EmbeddingProvider:
         return SentenceTransformerEmbeddingProvider(settings.embedding_model, settings.embedding_device)
     if settings.embedding_provider == "openai":
         return OpenAIEmbeddingProvider(settings)
-    return HashingEmbeddingProvider(settings.embedding_dimension)
+    return HashingEmbeddingProvider(settings.embedding_dimension, settings.embedding_mode)

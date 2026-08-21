@@ -29,6 +29,7 @@ class Settings(BaseModel):
     embedding_model: str = Field(default_factory=lambda: os.getenv("EMBEDDING_MODEL", "intfloat/multilingual-e5-small"))
     embedding_dimension: int = Field(default_factory=lambda: int(os.getenv("EMBEDDING_DIMENSION", "384")), ge=1, le=65536)
     embedding_device: str = Field(default_factory=lambda: os.getenv("EMBEDDING_DEVICE", "cpu"))
+    embedding_mode: Literal["development_fallback", "production"] = Field(default_factory=lambda: os.getenv("EMBEDDING_MODE", "development_fallback"))
     embedding_api_key: str | None = Field(default_factory=lambda: os.getenv("EMBEDDING_API_KEY"))
     embedding_base_url: str = Field(default_factory=lambda: os.getenv("EMBEDDING_BASE_URL", "https://api.openai.com/v1"))
 
@@ -103,7 +104,11 @@ class Settings(BaseModel):
     @property
     def production_ready(self) -> bool:
         """Production text-RAG readiness; voice readiness is reported separately."""
-        embedding_ready = self.embedding_provider == "sentence_transformers" or bool(self.embedding_api_key)
+        embedding_ready = (
+            self.embedding_provider == "sentence_transformers"
+            or bool(self.embedding_api_key)
+            or self.embedding_mode == "production"
+        )
         return bool(self.llm_provider == "openai" and self.llm_api_key and embedding_ready)
 
     @property
