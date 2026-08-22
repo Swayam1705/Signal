@@ -114,8 +114,10 @@ export function HomePage({ health, presetQuery }: { health: Health | null; prese
           {(running || Object.keys(events).length > 0) && <div className="pipeline-live" aria-live="polite">
             <div className="console-label"><span>LIVE PIPELINE</span><span>{activeStage ? stageNames[activeStage] : result ? 'COMPLETE' : 'INITIALIZING'}</span></div>
             <div className="stage-track">{stageOrder.map((stage, index) => {
-              const event = events[stage]; const state = event?.status === 'complete' ? 'done' : event?.status === 'started' ? 'active' : event?.status === 'error' ? 'failed' : ''
-              return <div className={state} key={stage}><span>{String(index + 1).padStart(2, '0')}</span><b>{stageNames[stage]?.replace('ING', '')}</b><small>{event?.duration_ms != null ? `${event.duration_ms.toFixed(1)}ms` : state === 'active' ? 'RUNNING' : '—'}</small></div>
+              const event = events[stage]
+              const skipped = stage === 'stt' && mode === 'text'
+              const state = event?.status === 'complete' ? 'done' : event?.status === 'started' ? 'active' : event?.status === 'error' ? 'failed' : skipped ? 'skipped' : ''
+              return <div className={state} key={stage}><span>{String(index + 1).padStart(2, '0')}</span><b>{stageNames[stage]?.replace('ING', '')}</b><small>{skipped ? 'TEXT MODE' : event?.duration_ms != null ? `${event.duration_ms.toFixed(1)}ms` : state === 'active' ? 'RUNNING' : '—'}</small></div>
             })}</div>
           </div>}
           {error && <div className="signal-error"><div><span>×</span><strong>SIGNAL LOST</strong></div><p>{error}</p><button onClick={() => { setError(null); setMode('text') }}>SWITCH TO TEXT MODE →</button></div>}
