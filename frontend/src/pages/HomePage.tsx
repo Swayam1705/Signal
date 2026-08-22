@@ -115,13 +115,17 @@ export function HomePage({ health, presetQuery }: { health: Health | null; prese
             <div className="console-label"><span>LIVE PIPELINE</span><span>{activeStage ? stageNames[activeStage] : result ? (result.status === 'refused' ? 'REFUSED — NO VERIFIED ANSWER' : result.trace.cache_hit ? 'CACHED — INSTANT ANSWER' : 'COMPLETE') : Object.keys(events).length ? 'FINALIZING' : 'INITIALIZING'}</span></div>
             <div className="stage-track">{stageOrder.map((stage, index) => {
               const event = events[stage]
+              const cacheHit = !!result?.trace?.cache_hit
               const notRun = !!result && !event && stage !== 'stt'   // cache hit or refusal short-circuit
               const skipped = stage === 'stt' && mode === 'text'
               const waiting = !result && !event                       // stage not reached yet
-              const state = event?.status === 'complete' ? 'done' : event?.status === 'started' ? 'active' : event?.status === 'error' ? 'failed' : (skipped || notRun) ? 'skipped' : waiting ? 'waiting' : ''
+              // On a cache hit the whole pipeline DID run earlier (stored in cache), so show all stages green.
+              const cachedDone = cacheHit && notRun
+              const state = event?.status === 'complete' ? 'done' : event?.status === 'started' ? 'active' : event?.status === 'error' ? 'failed' : cachedDone ? 'done' : (skipped || notRun) ? 'skipped' : waiting ? 'waiting' : ''
               let note = event?.duration_ms != null ? `${event.duration_ms.toFixed(1)}ms` : state === 'active' ? 'RUNNING' : '—'
               if (skipped) note = 'TEXT MODE'
-              else if (notRun) note = result?.trace?.cache_hit ? 'CACHED' : 'STOPPED'
+              else if (cachedDone) note = 'CACHED'
+              else if (notRun) note = 'STOPPED'
               else if (waiting) note = 'WAITING'
               return <div className={state} key={stage}><span>{String(index + 1).padStart(2, '0')}</span><b>{stageNames[stage]?.replace('ING', '')}</b><small>{note}</small></div>
             })}</div>
